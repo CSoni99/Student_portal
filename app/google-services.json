@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "674734722336",
+    "project_id": "student-portal-ecdbd",
+    "storage_bucket": "student-portal-ecdbd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:674734722336:android:9edf12224c536ea2aedb45",
+        "android_client_info": {
+          "package_name": "com.chaitanya.student_portal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "674734722336-t1lpgl0rp400ppreaj42qtlgnejji2cq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4etObSDaTpX5b9s7bGrKGcd8X-EiToJw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "674734722336-t1lpgl0rp400ppreaj42qtlgnejji2cq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
