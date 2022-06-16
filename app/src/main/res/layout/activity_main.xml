@@ -3,19 +3,21 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/blue_background">
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="273dp"
-        android:layout_height="98dp"
+
+        android:layout_width="280dp"
+        android:layout_height="100dp"
         android:contentDescription="logo_login"
         android:scaleType="fitStart"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.04"
+        app:layout_constraintVertical_bias="0.08"
         app:srcCompat="@drawable/download" />
 
     <LinearLayout
@@ -23,71 +25,86 @@
         android:layout_height="478dp"
         android:layout_gravity="center"
         android:layout_marginTop="56dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
         android:layout_weight="1"
-        android:background="@drawable/backgroiund_text_login"
+        android:background="@drawable/white_background"
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
         app:layout_constraintVertical_bias="0.967">
 
 
         <EditText
             android:id="@+id/phoneEt"
-            android:layout_width="301dp"
-            android:layout_height="60dp"
+
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
             android:layout_gravity="center"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/backgroiund_text_login"
+
+            android:background="@drawable/edittext_white"
             android:ems="10"
             android:foregroundGravity="center"
             android:gravity="center_vertical"
             android:hint="Phone Number"
             android:inputType="phone"
-            android:paddingLeft="25dp"
-            android:textColor="#000000"
-            android:textColorHint="#3F51B5"
-            android:textSize="20sp"
-            android:textStyle="bold|italic" />
+            android:paddingStart="16dp"
+            android:textColor="#3678FB"
+            android:textColorHint="#3678FB"
+            android:textSize="18sp" />
 
 
         <EditText
             android:id="@+id/codeEt"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
             android:layout_gravity="center"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/backgroiund_text_login"
+
+            android:background="@drawable/edittext_white"
             android:ems="10"
             android:foregroundGravity="center"
             android:gravity="center"
             android:hint="OTP"
             android:inputType="number"
-            android:padding="15dp"
-            android:textColor="#000000"
+            android:paddingStart="16dp"
+            android:textColor="#706464"
             android:textColorHint="#706464"
-            android:textSize="20sp"
-            android:textStyle="italic"
-            android:visibility="gone" />
+            android:textSize="20sp" />
 
 
         <TextView
             android:id="@+id/ResendOtp"
+
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:gravity="center"
+
             android:layout_width="152dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="20dp"
+
             android:text="Resend OTP?"
             android:textColor="#000000"
             android:textIsSelectable="false"
-            android:textSize="16sp"
-            android:visibility="gone" />
+            android:textSize="16sp" />
 
         <Button
             android:id="@+id/sendOTP_btn"
+
             android:layout_width="186dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -96,26 +113,44 @@
 
         <Button
             android:id="@+id/validate_otp_btn"
+
             android:layout_width="164dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Verify..."
-            android:visibility="gone" />
+            android:text="Verify..." />
+
+        <TextView
+            android:id="@+id/TandC"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="25dp"
+
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+
+            android:text="By continuing, you agree to our\n Terms of Service  Privacy Policy  Content Policy"
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="12sp" />
 
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Let's Rollin!!"
-        android:textColor="#0E3CB5"
-        android:textSize="38sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.772"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.236" />
+<!--    <TextView-->
+<!--        android:id="@+id/textView"-->
+
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Let's Rollin!!"-->
+<!--        android:textColor="#0E3CB5"-->
+<!--        android:textSize="38sp"-->
+<!--        android:textStyle="bold|italic"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.772"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.236" />-->
 </androidx.constraintlayout.widget.ConstraintLayout>
